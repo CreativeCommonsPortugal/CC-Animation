@@ -1,0 +1,262 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family:"SportingGrotesque";
+    src: url('SportingGrotesque-Bold.otf') format('truetype')
+}
+
+
+body {
+    background-image: url("background_quads.png");
+    background-repeat:repeat-y;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+#main{
+    
+}
+
+#column{
+    max-width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 970px;
+    z-index: 3;
+}
+
+/*media queries*/
+
+p {
+    /*background-color: rgba(255,0,0,0.5);*/
+    color: #000000;
+    font-family:  montserrat, helvetica, arial, sans-serif;
+    margin: 9px 0;
+    line-height:normal;
+}
+
+a:link, a:visited, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+header{
+    margin: 0px auto 20px;
+    padding: 40px;
+    /*width: 50%;*/
+    display: block;
+    /*background-color: rgba(0,0,0,0.5); */
+}
+
+
+section {
+    margin: auto;
+    /*width: 50%;*/
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+    /*background-color: rgba(0,0,0,0.5);*/
+}
+
+
+#main_title{
+    text-align: center;
+    overflow: auto;
+    padding-top: 70px;
+    height: 169px;;
+    width: 628px;
+    margin: auto;
+    background-image: url("paper_01.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:contain; 
+    z-index: 4;
+}
+
+.title{
+    text-align: center;
+    overflow: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    background-image: url("paper_01.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:contain; 
+    z-index: 4;
+    transform: rotate(6deg);
+}
+
+#white .title{
+     background-image: url("paper_02.png");
+}
+
+#white h1{
+    color:#bdaa9c;
+}
+
+h1 {
+    font-family: "SportingGrotesque", verdana;
+    font-size: 19pt;
+    line-height: 32px;
+    color: #08093c;
+}
+
+
+img{
+    z-index: 1;
+    width: 100%;
+}
+
+
+iframe{
+    align-content: center;
+    display: block;
+    margin: auto;
+    z-index: 4;
+    min-width: 80%;
+    min-height: 30vw;
+}
+
+#explanation{
+    text-align: left;
+    font-size: 16px;
+    margin:60px 13% 0;
+}
+
+#explanation p{
+    line-height: 23px;
+}
+
+/*
+#links{
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    margin:60px 10% 0 40%;
+    position: relative;
+    z-index: 4;
+    
+}
+*/
+
+.img_left{
+    float: left;
+    position: absolute;
+    z-index: 4;
+    max-width: 30%;
+}
+
+.text_right{
+    float: left;
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    margin:40px 10% 0 40%;
+    z-index: 4;
+}
+
+.img_right{
+    float: right;
+    position: relative;
+    z-index: 4;
+    max-width: 30%;
+}
+
+.text_left{
+    float: left;
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    margin:40px 40% 0 10%;
+    z-index: 4;
+}
+
+#row01{
+    /*background-color: rgb(255, 100, 100, 0.5);*/
+    height: 450px;
+    }
+
+.full-width{
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -100px;
+    position: absolute;
+    right: 50%;
+    width: 100vw;
+    z-index: 2;
+}
+
+
+@media (max-width: 992px){
+    .full-width{
+    width: 210vw;
+    }
+}
+
+@media (max-width: 767px){
+    header{
+    /*background-color: gray;*/
+    }
+    #main_title{
+    width: auto; 
+    height: auto;
+    padding: 10px;
+    background-size:auto; 
+    }
+    iframe{
+    margin: auto;
+    }
+    section{
+    /*background-color: lightblue;*/
+    }
+    #row01{
+    height: 650px;
+    }
+    #explanation {
+    margin: 40px auto;
+    }
+    .full-width{
+    display: none;
+    }
+    .img_left{
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+    float: none;
+}
+    .img_right{
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+    float: none;
+}
+    .text_right{
+    margin:auto;
+}
+    .text_left{
+    margin:auto;
+    position: relative;
+    float: none;
+}
+    
+    
+}
