@@ -1,27 +1,19 @@
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 @font-face {
     font-family:"SportingGrotesque";
     src: url('SportingGrotesque-Bold.otf') format('truetype')
-}
+    }
 
 
 body {
     background-image: url("background_quads.png");
     background-repeat:repeat-y;
-    background-position: center;
+    background-position:top ;
     background-attachment: scroll;
     background-size: cover;
     z-index: 1;
     overflow-x: hidden;
-}
-
-#main{
-    
-}
+    }
 
 #column{
     max-width: 970px;
@@ -31,37 +23,36 @@ body {
     margin-left: auto;
     max-width: 970px;
     z-index: 3;
-}
+    }
 
-/*media queries*/
-
-p {
-    /*background-color: rgba(255,0,0,0.5);*/
+p, footer {
     color: #000000;
     font-family:  montserrat, helvetica, arial, sans-serif;
     margin: 9px 0;
     line-height:normal;
-}
+    }
 
 a:link, a:visited, a:active{
     color: black;
     text-decoration: none;
-}
+    }
 
 a:hover {
-    color: black;
     text-decoration: underline;
-}
+    }
 
+ul{
+    list-style-type: none;
+    line-height: 23px;
+    margin: auto;
+    }
 
 
 header{
     margin: 0px auto 20px;
     padding: 40px 0px;
-    /*width: 50%;*/
     display: block;
-    /*background-color: rgba(0,0,0,0.5); */
-}
+    }
 
 
 section {
@@ -70,8 +61,7 @@ section {
     display: block;
     position: relative;
     margin-bottom: 45px;
-    /*background-color: rgba(0,0,0,0.5);*/
-}
+    }
 
 
 #main_title{
@@ -86,7 +76,7 @@ section {
     background-repeat: no-repeat; 
     background-size:contain; 
     z-index: 4;
-}
+    }
 
 .title{
     text-align: center;
@@ -100,28 +90,28 @@ section {
     background-size:contain; 
     z-index: 4;
     transform: rotate(6deg);
-}
+    }
 
 #white .title{
      background-image: url("paper_02.png");
-}
+    }
 
 #white h1{
     color:#bdaa9c;
-}
+    }
 
 h1 {
     font-family: "SportingGrotesque", verdana;
     font-size: 19pt;
     line-height: 32px;
     color: #08093c;
-}
+    }
 
 
 img{
     z-index: 1;
     width: 100%;
-}
+    }
 
 
 iframe{
@@ -131,17 +121,17 @@ iframe{
     z-index: 4;
     min-width: 80%;
     min-height: 30vw;
-}
+    }
 
 #explanation{
     text-align: left;
     font-size: 16px;
     margin:60px 13% 0;
-}
+    }
 
 #explanation p{
     line-height: 23px;
-}
+    }
 
 
 .img_left{
@@ -149,7 +139,7 @@ iframe{
     position: absolute;
     z-index: 4;
     max-width: 30%;
-}
+    }
 
 .text_right{
     float: left;
@@ -159,14 +149,18 @@ iframe{
     line-height: 20px;
     margin:40px 10% 0 40%;
     z-index: 4;
-}
+    }
 
 .img_right{
     float: right;
     position: relative;
     z-index: 4;
     max-width: 30%;
-}
+    }
+
+#links p{
+    line-height: 26px;
+    }
 
 .text_left{
     float: left;
@@ -176,7 +170,8 @@ iframe{
     line-height: 20px;
     margin:40px 40% 0 10%;
     z-index: 4;
-}
+    }
+
 
 #row01{
     /*background-color: rgb(255, 100, 100, 0.5);*/
@@ -192,14 +187,41 @@ iframe{
     right: 50%;
     width: 100vw;
     z-index: 2;
-}
-
-
-@media (max-width: 992px){
-    .full-width{
-    width: 210vw;
     }
-}
+
+#downloads{
+    margin: auto;
+    margin-top: 40px;
+    max-width: 85%;
+    overflow: auto;
+    }
+
+#downloads img{
+    display: inline-block;
+    width: 30%;
+    float: left;
+    padding: 10px;
+    }
+
+footer{
+    /*background-color:aqua;*/
+    text-align: center;
+    padding: 20px 0 20px;
+    margin: auto;
+    }
+
+@media (max-width: 825px){
+    .full-width{
+    width: 150vw;
+    margin-top: 0;
+    }
+    }
+
+@media (max-width: 1220px){
+    .full-width{
+    margin-top: 0;
+    }
+    }
 
 @media (max-width: 767px){
     header{
@@ -215,9 +237,12 @@ iframe{
     font-size: 10pt;
     line-height: 13pt;
     }
-    
     iframe{
     margin: auto;
+    top: 0;
+    left: 0;
+        width: 100%;
+    height: 100%;
     }
     section{
     /*background-color: lightblue;*/
@@ -236,21 +261,28 @@ iframe{
     position: relative;
     margin: auto;
     float: none;
-}
+    }
     .img_right{
     max-width: 70%;
     position: relative;
     margin: auto;
     float: none;
-}
+    }
     .text_right{
     margin:auto;
-}
+    }
     .text_left{
     margin:auto;
     position: relative;
     float: none;
-}
-    
-    
+    }
+    #row01 h1, #row02 h1{
+    font-size: 20px;
+    }
+    #row02 .title{
+    transform: rotate(-6deg);
+    }
+    #downloads img{
+    width: 90%;
+    }
 }
