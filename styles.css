@@ -117,6 +117,18 @@ h1 {
     color: #08093c;
     }
 
+#main_title h1{
+    margin:0 0 7px 0;
+}
+
+h2 {
+    font-family: "SportingGrotesque", verdana;
+    font-size: 16pt;
+    line-height: 28px;
+    color: #08093c;
+    margin: 0;
+    }
+
 
 img{
     z-index: 1;
@@ -232,6 +244,12 @@ li a:hover {
     width: 24%;
 }
 
+li img{
+    z-index: 1;
+    width: 40px;
+    padding: 4px;
+    }
+
 @media (max-width: 825px){
     .full-width{
     width: 150vw;
@@ -255,6 +273,14 @@ li a:hover {
     h1{
     font-size: 10pt;
     line-height: 13pt;
+    }
+    #main_title h1{
+    font-size: 15pt;
+    line-height: 20pt;
+    }
+    h2{
+    font-size: 10pt;
+    line-height: 14pt;
     }
     iframe{
     margin: auto;
@@ -302,6 +328,9 @@ li a:hover {
     width: 65%;
     padding: 10px;
     }
+    .downloads img:hover, .youtube img:hover{
+    width: 65%;
+}
     ul{
     line-height: 14px;
     }
