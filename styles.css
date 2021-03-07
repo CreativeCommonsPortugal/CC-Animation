@@ -184,7 +184,6 @@ iframe{
 
 
 #row01{
-    /*background-color: rgb(255, 100, 100, 0.5);*/
     height: 450px;
     }
 
@@ -201,7 +200,7 @@ iframe{
     z-index: 2;
     }
 
-.downloads{
+.downloads, .youtube{
     margin: auto;
     margin-top: 40px;
     max-width: 85%;
@@ -209,15 +208,14 @@ iframe{
     text-align: center;
     }
 
-.downloads img{
+.downloads img, .youtube img{
     width: 25%;
     padding: 20px;
     }
 
 footer{
-    background-color: rgb(8, 9, 60, 0.8);
+    background-color: rgba(8, 9, 60, 0.8);
     text-align: center;
-    /*padding: 20px 0 20px;*/
     margin: auto;
     }
 
@@ -230,7 +228,7 @@ li a:hover {
     text-decoration: none;
     }
 
-.downloads img:hover{
+.downloads img:hover, .youtube img:hover{
     width: 24%;
 }
 
@@ -248,9 +246,6 @@ li a:hover {
     }
 
 @media (max-width: 767px){
-    header{
-    /*background-color: gray;*/
-    }
     #main_title{
     width: auto; 
     height: auto;
@@ -303,7 +298,7 @@ li a:hover {
     #row02 .title{
     transform: rotate(-6deg);
     }
-    .downloads img{
+    .downloads img, .youtube img{
     width: 65%;
     padding: 10px;
     }
