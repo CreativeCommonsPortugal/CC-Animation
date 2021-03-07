@@ -188,6 +188,8 @@ iframe{
     height: 450px;
     }
 
+
+
 .full-width{
     left: 50%;
     margin-left: -50vw;
@@ -199,16 +201,16 @@ iframe{
     z-index: 2;
     }
 
-#downloads{
+.downloads{
     margin: auto;
     margin-top: 40px;
     max-width: 85%;
     overflow: auto;
+    text-align: center;
     }
 
-#downloads img{
+.downloads img{
     width: 25%;
-    float: left;
     padding: 20px;
     }
 
@@ -228,7 +230,7 @@ li a:hover {
     text-decoration: none;
     }
 
-#downloads img:hover{
+.downloads img:hover{
     width: 24%;
 }
 
@@ -301,8 +303,9 @@ li a:hover {
     #row02 .title{
     transform: rotate(-6deg);
     }
-    #downloads img{
-    width: 90%;
+    .downloads img{
+    width: 65%;
+    padding: 10px;
     }
     ul{
     line-height: 14px;
